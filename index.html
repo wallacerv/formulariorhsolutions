@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulário de Contato</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f2f2f2;
+    }
+    header{
+      width: 100%;
+      display:block;
+      justify-content: center;
+    }
+    .form-container {
+      background: white;
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      padding: 10px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    /*.cor-header{
+      background-image: linear-gradient(to right, #8d93ac, #c4bcbe);
+      border: 2px solid;
+    }*/
+    .logo{
+      padding-left: 200px;
+      width: 10%;
+
+      
+    }
+    textarea{
+      resize: none;
+      width: 100%;
+      
+
+    }
+
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+    }
+    input {
+      width: 95%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    footer{
+     
+      background-color: #b5b9cd ;
+      
+    }
+    
+    @media (max-width: 600px) {
+
+    .logo{
+      width: 50%;
+      padding: 1px;
+      
+    }  
+    footer img{
+      width: 30%;
+
+    }
+    }
+  </style>
+
+
+</head>
+<body>
+  <header>
+      
+      <div class="cor-header">
+        <img src="IMG_0890.PNG" class="logo">
+      </div>
+
+
+  </header>
+  <hr>
+  <br>
+  <div class="form-container">
+    <form action="enviar.php" method="POST">
+      <div class="form-group">
+        <h2>Estrutura do RH</h2>
+        <label for="pergunta1">Como o setor de Recursos Humanos da empresa está organizado atualmente?</label>
+       <!-- <input type="text" id="nome" name="nome"  required />-->
+        <textarea id="pergunta1" name="pergunta1" rows="10" cols="40">
+
+        </textarea>  
+
+      </div>
+      <div class="form-group">
+        <label for="pergunta2">Existe uma equipe dedicada apenas a RH? Quantas pessoas nela?</label>
+        <!--<input type="tel" id="telefone" name="telefone" required />-->
+        <textarea id="pergunta2" name="pergunta2" rows="10" cols="50"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="pergunta3">Quais são as responsabilidades principais atribuídas ao RH hoje?</label>
+        <textarea id="pergunta3" name="pergunta3" rows="10" cols="50"></textarea>
+        <!--<input type="email" id="email" name="email" required />-->
+      </div>
+      <hr>
+
+      <h2>Processos Operacionais</h2>
+        <label for="pergunta4">Como são feitos os processos de recrutamento e seleção?</label>
+       <!-- <input type="text" id="nome" name="nome"  required />-->
+        <textarea id="pergunta4" name="pergunta4" rows="10" cols="50">
+
+        </textarea>  
+
+        
+      <div class="form-group">
+        <label for="pergunta5">Como a empresa gerencia a integração e o treinamento dos novos colaboradores?</label>
+        <!--<input type="tel" id="telefone" name="telefone" required />-->
+        <textarea id="pergunta5" name="pergunta5" rows="10" cols="50"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="pergunta6">Há algum tipo de avaliação de desempenho formal? Com que frequência?</label>
+        <textarea id="pergunta6" name="pergunta6" rows="10" cols="50"></textarea>
+        <!--<input type="email" id="email" name="email" required />-->
+      </div>
+
+            <div class="form-group">
+        <label for="pergunta7">Existe um plano de carreira e desenvolvimento estruturado para os colaboradores?</label>
+        <textarea id="pergunta7" name="pergunta7" rows="10" cols="50"></textarea>
+        <!--<input type="email" id="email" name="email" required />-->
+      </div>
+
+      <hr>
+        
+      <h2>Clima e Cultura Organizacional</h2>
+        <label for="pergunta8">Como você avalia o clima e a cultura organizacional da empresa?</label>
+       <!-- <input type="text" id="nome" name="nome"  required />-->
+        <textarea id="pergunta8" name="pergunta8" rows="10" cols="50">
+
+        </textarea>  
+
+      
+      <div class="form-group">
+        <label for="pergunta9"> Existe algum canal formal para que os colaboradores deem feedbacks?</label>
+        <!--<input type="tel" id="telefone" name="telefone" required />-->
+        <textarea id="pergunta9" name="pergunta9" rows="10" cols="50"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="pergunta10">Quais são os principais desafios em manter os colaboradores engajados e motivados?</label>
+        <textarea id="pergunta10" name="pergunta10" rows="10" cols="50"></textarea>
+        <!--<input type="email" id="email" name="email" required />-->
+      </div>
+      <hr>
+
+      <h2>Problemas Frequentes</h2>
+        <label for="pergunta11">Quais são as maiores dificuldades que o RH enfrenta hoje? (ex.: alta rotatividade, absenteísmo, conflitos internos)</label>
+       <!-- <input type="text" id="nome" name="nome"  required />-->
+        <textarea id="pergunta11" name="pergunta11" rows="10" cols="50">
+
+        </textarea>  
+
+        
+      <div class="form-group">
+        <label for="pergunta12">Já houve problemas com passivos trabalhistas?</label>
+        <!--<input type="tel" id="telefone" name="telefone" required />-->
+        <textarea id="pergunta12" name="pergunta12" rows="10" cols="50"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="pergunta13">Como a empresa lida com demissões e desligamentos?</label>
+        <textarea id="pergunta13" name="pergunta13" rows="10" cols="50"></textarea>
+        <!--<input type="email" id="email" name="email" required />-->
+      </div>
+
+
+      <button type="submit">Enviar</button>
+      
+    </form>
+  </div>
+
+   <script>
+    const textareas = document.querySelectorAll('textarea');
+
+    textareas.forEach((textarea) => {
+      // Impede mais de dois espaços consecutivos
+      textarea.addEventListener('input', () => {
+        textarea.value = textarea.value.replace(/ {3,}/g, '  ');
+      });
+
+      // Coloca o cursor no início ao focar
+      textarea.addEventListener('focus', () => {
+        // Delay necessário para funcionar corretamente em alguns navegadores
+        setTimeout(() => {
+          textarea.setSelectionRange(0, 0);
+        }, 0);
+      });
+    });
+  </script>
+<footer>
+
+<img src="IMG_0891.PNG" alt="logo_RHSolutions" width="20%">
+  <p>Todos os direitos reservados</p>
+
+</footer>
+</body>
+</html>
