@@ -47,21 +47,38 @@
     textarea{
       resize: none;
       width: 100%;
-      
+      border-radius: 8px;
+
 
     }
-
+    p{
+      padding-bottom: 10px;
+    }
 
     label {
       display: block;
       margin-bottom: 6px;
     }
-    input {
+    /*input{
       width: 95%;
       padding: 10px;
       border: 1px solid #ccc;
       border-radius: 6px;
       
+    }*/
+    input{
+     margin: 8px;
+     padding: 9px;
+     display: flexbox;
+        
+      
+    }
+  
+    label input[type="radio"]{
+      display: inline-block;
+      margin-bottom: 6px;
+
+
     }
     button {
       width: 100%;
@@ -81,6 +98,7 @@
       background-color: #b5b9cd ;
       
     }
+    
     
     @media (max-width: 600px) {
 
@@ -102,7 +120,7 @@
   <header>
       
       <div class="cor-header">
-        <img src="IMG_0890.PNG" class="logo">
+        <img src="IMG_08900.PNG" class="logo">
       </div>
 
 
@@ -110,101 +128,149 @@
   <hr>
   <br>
   <div class="form-container">
-    <form action="enviar.php" method="POST">
+    <form action="https://formsubmit.co/e94ebe1041c4fb0bb32e78d092d874ff" method="POST">
       <div class="form-group">
+        
         <h2>Estrutura do RH</h2>
-        <label for="pergunta1">Como o setor de Recursos Humanos da empresa está organizado atualmente?</label>
-       <!-- <input type="text" id="nome" name="nome"  required />-->
-        <textarea id="pergunta1" name="pergunta1" rows="10" cols="40">
-
+        <br>
+        <p><label for="Como o setor de Recursos Humanos da empresa está organizado atualmente?">Como o setor de Recursos Humanos da empresa está organizado atualmente?</label></p>
+        <textarea id="Como o setor de Recursos Humanos da empresa está organizado atualmente?" name="Como o setor de Recursos Humanos da empresa está organizado atualmente?" rows="10" cols="50" >
         </textarea>  
 
       </div>
+      <br>
+        <div class="form-group">
+        <p>Existe uma equipe dedicada apenas a RH? Quantas pessoas nela?</p>
+        
+         <label> <input type="radio" name="Existe uma equipe dedicada apenas a RH? Quantas pessoas nela?" value="1-5">1-5</input></label>
+         <label> <input type="radio" name="Existe uma equipe dedicada apenas a RH? Quantas pessoas nela?" value="6-10">6-10</input></label>
+          <label><input type="radio" name="Existe uma equipe dedicada apenas a RH? Quantas pessoas nela?" value="11-19">11-19</input></label>
+          <label><input type="radio" name="Existe uma equipe dedicada apenas a RH? Quantas pessoas nela?" value="20+">20+</input></label>
+        </div>
+        <br>
+      
       <div class="form-group">
-        <label for="pergunta2">Existe uma equipe dedicada apenas a RH? Quantas pessoas nela?</label>
-        <!--<input type="tel" id="telefone" name="telefone" required />-->
-        <textarea id="pergunta2" name="pergunta2" rows="10" cols="50"></textarea>
-      </div>
-      <div class="form-group">
-        <label for="pergunta3">Quais são as responsabilidades principais atribuídas ao RH hoje?</label>
-        <textarea id="pergunta3" name="pergunta3" rows="10" cols="50"></textarea>
-        <!--<input type="email" id="email" name="email" required />-->
+        <p>Quais são as responsabilidades principais atribuídas ao RH hoje?</p>
+          
+          <label><input type="radio" name="Quais são as responsabilidades principais atribuídas ao RH hoje?" value="Recrutamento e seleção de novos colaboradores">Recrutamento e seleção de novos colaboradores</input></label>
+          <label><input type="radio" name="Quais são as responsabilidades principais atribuídas ao RH hoje?" value="Admissão e desligamento">Admissão e desligamento</input></label>
+          <label><input type="radio" name="Quais são as responsabilidades principais atribuídas ao RH hoje?" value="Controle de ponto e folha de pagamento(em parceria com o financeiro)">Controle de ponto e folha de pagamento(em parceria com o financeiro)</input></label>
+          <label><input type="radio" name="Quais são as responsabilidades principais atribuídas ao RH hoje?" value="Treinamentos pontuais">Treinamentos pontuais</input></label>
+          <label><input type="radio" name="Quais são as responsabilidades principais atribuídas ao RH hoje?" value="Apoio à liderança em questões de gestão de pessoas">Apoio à liderança em questões de gestão de pessoas</input></label>
+        
+        <br>
       </div>
       <hr>
 
-      <h2>Processos Operacionais</h2>
-        <label for="pergunta4">Como são feitos os processos de recrutamento e seleção?</label>
-       <!-- <input type="text" id="nome" name="nome"  required />-->
-        <textarea id="pergunta4" name="pergunta4" rows="10" cols="50">
 
-        </textarea>  
+
+      <h2>Processos Operacionais</h2>
+      <br>
+      <div class="form-group">
+        <p>Como são feitos os processos de recrutamento e seleção?</p>
+           
+          <label><input type="radio" name="Como são feitos os processos de recrutamento e seleção?" value="Por indicação">Por indicação</input></label>
+          <label><input type="radio" name="Como são feitos os processos de recrutamento e seleção?" value="Por processo interno">Por processo interno</input></label>
+          <label><input type="radio" name="Como são feitos os processos de recrutamento e seleção?" value="Não faço processo seletivo">Não faço processo seletivo</input></label>
+        </div>
+        <br> 
 
         
       <div class="form-group">
-        <label for="pergunta5">Como a empresa gerencia a integração e o treinamento dos novos colaboradores?</label>
-        <!--<input type="tel" id="telefone" name="telefone" required />-->
-        <textarea id="pergunta5" name="pergunta5" rows="10" cols="50"></textarea>
+        <label for="Como a empresa gerencia a integração e o treinamento dos novos colaboradores?">Como a empresa gerencia a integração e o treinamento dos novos colaboradores?</label>
+        
+        <textarea id="Como a empresa gerencia a integração e o treinamento dos novos colaboradores?" name="Como a empresa gerencia a integração e o treinamento dos novos colaboradores?" rows="10" cols="50"></textarea>
       </div>
+    
+      <br>
       <div class="form-group">
-        <label for="pergunta6">Há algum tipo de avaliação de desempenho formal? Com que frequência?</label>
-        <textarea id="pergunta6" name="pergunta6" rows="10" cols="50"></textarea>
-        <!--<input type="email" id="email" name="email" required />-->
+          <p>Há algum tipo de avaliação mensal de desempenho formal? Com que frequência?</p>
+           
+          <label><input type="radio" name="Há algum tipo de avaliação mensal de desempenho formal? Com que frequência?" value="0">0</input></label>
+          <label><input type="radio" name="Há algum tipo de avaliação mensal de desempenho formal? Com que frequência?" value="1-5">1-5</input></label>
+          <label><input type="radio" name="Há algum tipo de avaliação mensal de desempenho formal? Com que frequência?" value="6-10">6-10</input></label>
+          <label><input type="radio" name="Há algum tipo de avaliação mensal de desempenho formal? Com que frequência?" value="10+">10+</input></label>
+        
       </div>
 
-            <div class="form-group">
-        <label for="pergunta7">Existe um plano de carreira e desenvolvimento estruturado para os colaboradores?</label>
-        <textarea id="pergunta7" name="pergunta7" rows="10" cols="50"></textarea>
-        <!--<input type="email" id="email" name="email" required />-->
+         
+      <div class="form-group">
+          <p>Existe um plano de carreira e desenvolvimento estruturado para os colaboradores?</p>
+           
+          <label><input type="radio" name="Existe um plano de carreira e desenvolvimento estruturado para os colaboradores?" value="sim">sim</input></label>
+          <label><input type="radio" name="Existe um plano de carreira e desenvolvimento estruturado para os colaboradores?" value="não">não</input></label>
+      
       </div>
 
       <hr>
         
       <h2>Clima e Cultura Organizacional</h2>
-        <label for="pergunta8">Como você avalia o clima e a cultura organizacional da empresa?</label>
-       <!-- <input type="text" id="nome" name="nome"  required />-->
-        <textarea id="pergunta8" name="pergunta8" rows="10" cols="50">
+      <br>
+        <p><label for="Como você avalia o clima e a cultura organizacional da empresa?">Como você avalia o clima e a cultura organizacional da empresa?</label></p>
+
+        <textarea id="Como você avalia o clima e a cultura organizacional da empresa?" name="Como você avalia o clima e a cultura organizacional da empresa?" rows="10" cols="50">
 
         </textarea>  
 
       
       <div class="form-group">
-        <label for="pergunta9"> Existe algum canal formal para que os colaboradores deem feedbacks?</label>
-        <!--<input type="tel" id="telefone" name="telefone" required />-->
-        <textarea id="pergunta9" name="pergunta9" rows="10" cols="50"></textarea>
+          <p>Existe algum canal formal para que os colaboradores deem feedbacks</p>
+           
+          <label><input type="radio" name="Existe algum canal formal para que os colaboradores deem feedbacks?" value="sim">sim</input></label>
+          <label><input type="radio" name="Existe algum canal formal para que os colaboradores deem feedbacks?" value="não">não</input></label>
+
+        
       </div>
+      <br>     
+      
       <div class="form-group">
-        <label for="pergunta10">Quais são os principais desafios em manter os colaboradores engajados e motivados?</label>
-        <textarea id="pergunta10" name="pergunta10" rows="10" cols="50"></textarea>
-        <!--<input type="email" id="email" name="email" required />-->
+        <p>Quais são os principais desafios em manter os colaboradores engajados e motivados?</p>
+                  
+          <label><input type="radio" name="Quais são os principais desafios em manter os colaboradores engajados e motivados?" value="Falta de reconhecimento formal">Falta de reconhecimento formal</input></label>
+          <label><input type="radio" name="Quais são os principais desafios em manter os colaboradores engajados e motivados?" value="Ausência de plano de carreira">Ausência de plano de carreira</input></label>
+          <label><input type="radio" name="Quais são os principais desafios em manter os colaboradores engajados e motivados?" value="Comunicação pouco transparente">Comunicação pouco transparente</input></label>
+          <label><input type="radio" name="Quais são os principais desafios em manter os colaboradores engajados e motivados?" value="Carga de trabalho elevada em alguns setores">Carga de trabalho elevada em alguns setores</input></label>
+            
       </div>
+      <br>
+      
+      
       <hr>
 
       <h2>Problemas Frequentes</h2>
-        <label for="pergunta11">Quais são as maiores dificuldades que o RH enfrenta hoje? (ex.: alta rotatividade, absenteísmo, conflitos internos)</label>
-       <!-- <input type="text" id="nome" name="nome"  required />-->
-        <textarea id="pergunta11" name="pergunta11" rows="10" cols="50">
-
-        </textarea>  
+      <br>
+        <div class="form-group">
+        <p>Quais são as maiores dificuldades que o RH enfrenta hoje?</p>
+                   
+          <label><input type="radio" name="Há algum tipo de avaliação mensal de desempenho formal? Com que frequência?" value="Alta rotatividade em cargos operacionais">Alta rotatividade em cargos operacionais</input></label>
+          <label><input type="radio" name="Há algum tipo de avaliação mensal de desempenho formal? Com que frequência?" value="Processos manuais e lentos">Processos manuais e lentos</input></label>
+          <label><input type="radio" name="Há algum tipo de avaliação mensal de desempenho formal? Com que frequência?" value="Falta de ferramenta de gestão de desempenho">Falta de ferramenta de gestão de desempenho</input></label>
+         <label> <input type="radio" name="Há algum tipo de avaliação mensal de desempenho formal? Com que frequência?" value="Baixo engajamento de líderes com temas de RH">Baixo engajamento de líderes com temas de RH</input></label>
+        </div>
+         <br>
 
         
       <div class="form-group">
-        <label for="pergunta12">Já houve problemas com passivos trabalhistas?</label>
-        <!--<input type="tel" id="telefone" name="telefone" required />-->
-        <textarea id="pergunta12" name="pergunta12" rows="10" cols="50"></textarea>
+        <p>Já houve problemas com passivos trabalhistas?</p>
+  
+        <label><input type="radio" name="Já houve problemas com passivos trabalhistas?" value="sim">sim</input></label>
+        <label><input type="radio" name="Já houve problemas com passivos trabalhistas?" value="não">não</input></label>
       </div>
+      <br>
+
       <div class="form-group">
-        <label for="pergunta13">Como a empresa lida com demissões e desligamentos?</label>
-        <textarea id="pergunta13" name="pergunta13" rows="10" cols="50"></textarea>
-        <!--<input type="email" id="email" name="email" required />-->
+        <label for="Como a empresa lida com demissões e desligamentos?">Como a empresa lida com demissões e desligamentos?</label>
+        <textarea id="Como a empresa lida com demissões e desligamentos?" name="Como a empresa lida com demissões e desligamentos?" rows="10" cols="50"></textarea>
+
       </div>
 
 
       <button type="submit">Enviar</button>
-      
+      <input type="hidden" name="_next" value="https://testedeformulario.infinityfreeapp.com/thanks.html">
     </form>
   </div>
 
-   <script>
+  <script>
     const textareas = document.querySelectorAll('textarea');
 
     textareas.forEach((textarea) => {
@@ -217,14 +283,14 @@
       textarea.addEventListener('focus', () => {
         // Delay necessário para funcionar corretamente em alguns navegadores
         setTimeout(() => {
-          textarea.setSelectionRange(0, 0);
+          textarea.setSelectionRange(0, 2);
         }, 0);
       });
     });
   </script>
 <footer>
 
-<img src="IMG_0891.PNG" alt="logo_RHSolutions" width="20%">
+<img src="IMG_08911.PNG" alt="logo_RHSolutions" width="20%">
   <p>Todos os direitos reservados</p>
 
 </footer>
