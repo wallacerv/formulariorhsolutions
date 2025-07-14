@@ -20,6 +20,7 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 50px;
     }
     h2 {
       text-align: center;
@@ -29,7 +30,7 @@
         padding: 5px;
         margin: 5px;
         text-align: left;
-        background-color: #e7e7e7;
+        /*background-color: #e7e7e7;*/
     }
     .form-group {
       margin-bottom: 15px;
@@ -39,20 +40,31 @@
       border: 2px solid;
     }*/
     .logo{
-      padding-left: 200px;
-      width: 10%;
+      padding-left: 30px;
+      width: 15%;
 
       
     }
-    textarea{
-      resize: none;
-      width: 100%;
-      border-radius: 8px;
-
-
+    
+.form-step {
+  display: none;
+}
+.form-step.active {
+  display: block;
+}
+textarea{
+  resize: none;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 50px; 
+}
+    .teste{
+      margin-top: 80px;
+      
     }
     p{
       padding-bottom: 10px;
+      
     }
 
     label {
@@ -67,11 +79,18 @@
       
     }*/
     input{
-     margin: 8px;
+     margin: 10px;
+     margin-bottom: 30px;
      padding: 9px;
-     display: flexbox;
-        
+
+          
       
+    }
+    .texto{
+           width: 50%;
+     display: flexbox;
+     border-radius: 8px;
+     background-color: #f8f4f4;
     }
   
     label input[type="radio"]{
@@ -90,13 +109,32 @@
       cursor: pointer;
       font-size: 16px;
     }
+
     button:hover {
       background: #45a049;
     }
+        .botaovoltar{
+      background: rgb(243, 9, 9);
+      width: 100%;
+      margin-right: 10px;
+      
+      
+    }
+    .botaovoltar:hover{
+      background-color: rgb(168, 1, 1);
+    }
+    .separadorBotao{
+      padding-top: 100px;
+      display:flex;
+    }
+        footer img{
+      width: 300px;
+
+    }
     footer{
      
-      background-color: #b5b9cd ;
-
+      background-color: #919ac7 ;
+      display: flex;
       
     }
     
@@ -108,8 +146,10 @@
       padding: 1px;
       
     }  
-    footer img{
-      width: 30%;
+
+
+    .organizafooter{
+      display: flex;
 
     }
 }
