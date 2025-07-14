@@ -17,18 +17,35 @@
 
 
   </header>
-  <hr>
-  <br>
-  <h6>Aviso de Privacidade e Tratamento de Dados (LGPD)
+ <br>
+ <!-- <h6>Aviso de Privacidade e Tratamento de Dados (LGPD)
 <br>
 As informações fornecidas neste formulário serão utilizadas exclusivamente para a realização de diagnóstico prévio voltado à análise de processos e à avaliação da viabilidade de implementação de ferramenta de automação em Recursos Humanos (RH).
 <br>
 Todos os dados pessoais informados serão tratados em conformidade com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 -- LGPD), observando-se os princípios da finalidade, necessidade, transparência e segurança.
 <br>
 Ao prosseguir com o preenchimento, você declara estar ciente e de acordo com o tratamento dos dados para os fins aqui descritos.</h6>
+-->
 <br>
   <div class="form-container">
-    <form action="https://formsubmit.co/4c26bdbdd1c0d67087e5018a0a9eb7e8" method="POST">
+    <form id="multiStepForm" action="https://formsubmit.co/4c26bdbdd1c0d67087e5018a0a9eb7e8" method="POST">
+      <div class="form-step active">
+        <h2>Informações sobre a empresa</h2>
+        <br>
+        <label for="nome">nome</label>
+        <input class="texto" type="text" id="nome" name="nome" required>
+        <label for="email">email</label>
+        <input class="texto" type="email" id="email" name="email" required>
+        <label for="telefone">telefone</label>
+        <input class="texto" type="tel" id="telefone" name="telefone" placeholder="(xx)xxxxxxxxx" required>
+        <button type="button" onclick="nextStep()">Próximo</button>
+        <!--<button type="button" class="next">Próximo</button>-->
+      </div>
+   
+         
+      
+      
+      <div class="form-step">
       <div class="form-group">
         
         <h2>Estrutura do RH</h2>
@@ -59,12 +76,19 @@ Ao prosseguir com o preenchimento, você declara estar ciente e de acordo com o 
           <label><input type="radio" name="Quais são as responsabilidades principais atribuídas ao RH hoje?" value="Apoio à liderança em questões de gestão de pessoas">Apoio à liderança em questões de gestão de pessoas</input></label>
         
         <br>
+        
+
       </div>
-      <hr>
+          <div class="separadorBotao">
+          <button  type="button" class="botaovoltar" onclick="prevStep()">Voltar</button>
+          <button class="next" type="button" onclick="nextStep()">Próximo</button>
+          </div>
+      </div>
+      
 
 
-
-      <h2>Processos Operacionais</h2>
+      <div class="form-step">
+      <h2>2 Processos Operacionais</h2>
       <br>
       <div class="form-group">
         <p>Como são feitos os processos de recrutamento e seleção?</p>
@@ -82,7 +106,7 @@ Ao prosseguir com o preenchimento, você declara estar ciente e de acordo com o 
         <textarea id="Como a empresa gerencia a integração e o treinamento dos novos colaboradores?" name="Como a empresa gerencia a integração e o treinamento dos novos colaboradores?" rows="10" cols="50"></textarea>
       </div>
     
-      <br>
+     
       <div class="form-group">
           <p>Há algum tipo de avaliação mensal de desempenho formal? Com que frequência?</p>
            
@@ -99,19 +123,22 @@ Ao prosseguir com o preenchimento, você declara estar ciente e de acordo com o 
            
           <label><input type="radio" name="Existe um plano de carreira e desenvolvimento estruturado para os colaboradores?" value="sim">sim</input></label>
           <label><input type="radio" name="Existe um plano de carreira e desenvolvimento estruturado para os colaboradores?" value="não">não</input></label>
-      
+          <div class="separadorBotao">
+          <button type="button" class="botaovoltar" onclick="prevStep()">Voltar</button>
+          <button type="button" onclick="nextStep()">Próximo</button>
+          </div>
       </div>
-
-      <hr>
-        
-      <h2>Clima e Cultura Organizacional</h2>
+      </div>
+      
+      <div class="form-step">
+      <h2>3 Clima e Cultura Organizacional</h2>
       <br>
         <p><label for="Como você avalia o clima e a cultura organizacional da empresa?">Como você avalia o clima e a cultura organizacional da empresa?</label></p>
 
         <textarea id="Como você avalia o clima e a cultura organizacional da empresa?" name="Como você avalia o clima e a cultura organizacional da empresa?" rows="10" cols="50">
 
         </textarea>  
-        <br>
+       
       
       <div class="form-group">
           <p>Existe algum canal formal para que os colaboradores deem feedbacks</p>
@@ -121,8 +148,7 @@ Ao prosseguir com o preenchimento, você declara estar ciente e de acordo com o 
 
         
       </div>
-      <br>     
-      
+    
       <div class="form-group">
         <p>Quais são os principais desafios em manter os colaboradores engajados e motivados?</p>
                   
@@ -133,11 +159,15 @@ Ao prosseguir com o preenchimento, você declara estar ciente e de acordo com o 
             
       </div>
       <br>
+          <div class="separadorBotao">
+          <button  type="button" class="botaovoltar" onclick="prevStep()">Voltar</button>
+          <button type="button" onclick="nextStep()">Próximo</button>
+          </div>
+      </div>
       
       
-      <hr>
-
-      <h2>Problemas Frequentes</h2>
+      <div class="form-step">
+      <h2>4 Problemas Frequentes</h2>
       <br>
         <div class="form-group">
         <p>Quais são as maiores dificuldades que o RH enfrenta hoje?</p>
@@ -164,35 +194,31 @@ Ao prosseguir com o preenchimento, você declara estar ciente e de acordo com o 
 
       </div>
 
-
-      <button type="submit">Enviar</button>
+      <div class="separadorBotao">
+          <button class="prev"type="button" class="botaovoltar" onclick="prevStep()">Voltar</button>
+          <button class="next" type="submit">Enviar</button>
+      </div>
+      
       <input type="hidden" name="_next" value="https://wallacerv.github.io/formulariorhsolutions/thanks.html">
     </form>
   </div>
+  </div>
 
-  <script>
-    const textareas = document.querySelectorAll('textarea');
-
-    textareas.forEach((textarea) => {
-      // Impede mais de dois espaços consecutivos
-      textarea.addEventListener('input', () => {
-        textarea.value = textarea.value.replace(/ {3,}/g, '  ');
-      });
-
-      // Coloca o cursor no início ao focar
-      textarea.addEventListener('focus', () => {
-        // Delay necessário para funcionar corretamente em alguns navegadores
-        setTimeout(() => {
-          textarea.setSelectionRange(0, 2);
-        }, 0);
-      });
-    });
-  </script>
 <footer>
 
 <img src="IMG_08911.PNG" alt="logo_RHSolutions" width="20%">
-  <p>Todos os direitos reservados</p>
-
+  
+<div class="organizafooter">
+<h6>Aviso de Privacidade e Tratamento de Dados (LGPD)
+<br>
+As informações fornecidas neste formulário serão utilizadas exclusivamente para a realização de diagnóstico prévio voltado à análise de processos e à avaliação da viabilidade de implementação de ferramenta de automação em Recursos Humanos (RH).
+<br>
+Todos os dados pessoais informados serão tratados em conformidade com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 -- LGPD), observando-se os princípios da finalidade, necessidade, transparência e segurança.
+<br>
+Ao prosseguir com o preenchimento, você declara estar ciente e de acordo com o tratamento dos dados para os fins aqui descritos.</h6>
+<p class="teste">Todos os direitos reservados</p>
+</div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
