@@ -127,6 +127,15 @@ textarea{
       padding-top: 100px;
       display:flex;
     }
+    input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
 
             footer img{
       width: 300px;
