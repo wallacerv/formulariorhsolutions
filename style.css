@@ -58,10 +58,10 @@ textarea{
   border-radius: 8px;
   margin-bottom: 50px; 
 }
-    .teste{
+    /*.teste{
       margin-top: 80px;
       
-    }
+    }*/
     p{
       padding-bottom: 10px;
       
@@ -127,7 +127,8 @@ textarea{
       padding-top: 100px;
       display:flex;
     }
-        footer img{
+
+            footer img{
       width: 300px;
 
     }
@@ -146,10 +147,20 @@ textarea{
       padding: 1px;
       
     }  
+        footer{
+     
+      background-color: #919ac7 ;
+      display: block;
+      
+    }
+     footer img{
+      width: 40%;
+
+    }
 
 
     .organizafooter{
-      display: flex;
+      display: block;
 
     }
 }
